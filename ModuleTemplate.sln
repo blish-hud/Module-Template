@@ -5,16 +5,30 @@ VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleTemplate", "ModuleTemplate.csproj", "{FEC31CE0-4539-4A1B-A633-78E3BDBD8C56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleTemplateDeployment", "..\ModuleTemplateDeployment\ModuleTemplateDeployment.csproj", "{154D03E2-A006-46A9-91C3-15A96F7EA4F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEC31CE0-4539-4A1B-A633-78E3BDBD8C56}.Debug|Any CPU.ActiveCfg = Debug|x64
 		{FEC31CE0-4539-4A1B-A633-78E3BDBD8C56}.Debug|x64.ActiveCfg = Debug|x64
 		{FEC31CE0-4539-4A1B-A633-78E3BDBD8C56}.Debug|x64.Build.0 = Debug|x64
+		{FEC31CE0-4539-4A1B-A633-78E3BDBD8C56}.Release|Any CPU.ActiveCfg = Release|x64
 		{FEC31CE0-4539-4A1B-A633-78E3BDBD8C56}.Release|x64.ActiveCfg = Release|x64
 		{FEC31CE0-4539-4A1B-A633-78E3BDBD8C56}.Release|x64.Build.0 = Release|x64
+		{154D03E2-A006-46A9-91C3-15A96F7EA4F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{154D03E2-A006-46A9-91C3-15A96F7EA4F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{154D03E2-A006-46A9-91C3-15A96F7EA4F5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{154D03E2-A006-46A9-91C3-15A96F7EA4F5}.Debug|x64.Build.0 = Debug|Any CPU
+		{154D03E2-A006-46A9-91C3-15A96F7EA4F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{154D03E2-A006-46A9-91C3-15A96F7EA4F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{154D03E2-A006-46A9-91C3-15A96F7EA4F5}.Release|x64.ActiveCfg = Release|Any CPU
+		{154D03E2-A006-46A9-91C3-15A96F7EA4F5}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
