@@ -1,17 +1,16 @@
 {
-  "name": "ModuleTemplate",
+  "name": "$projectname$",
   "version": "0.1.0",
-  "namespace": "your.namespace.here",
-  "package": "ModuleTemplate.dll",
+  "namespace": "$username$.$safeprojectname$",
+  "package": "$projectname$.dll",
   "manifest_version": 1,
 
   "description": "Description of your module. Visit https://github.com/blish-hud/manifest.json/blob/master/manifest-v1.md for details about the manifest format.",
   "dependencies": {
     "bh.blishhud": ">=0.4.2"
   },
-  "url": "https://github.com/blish-hud/ModuleTemplate",
+  "url": "https://github.com/$username$/$safeprojectname$",
   "author": {
-    "name": "Freesnöw",
-    "username": "LandersXanders.1235"
+    "name": "$username$"
   }
 }

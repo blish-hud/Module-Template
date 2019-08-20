@@ -1,0 +1,32 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Blish HUD Module</Name>
+    <Description>Allows you to create a module for Blish HUD.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>BlishHUDModule</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="ModuleTemplate.csproj" File="ModuleTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="manifest.json">manifest.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Module.cs">Module.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="ref" TargetFolderName="ref">
+        <ProjectItem ReplaceParameters="false" TargetFileName="_Instructions.txt">_Instructions.txt</ProjectItem>
+      </Folder>
+      <Folder Name="BuildScripts" TargetFolderName="BuildScripts">
+        <ProjectItem ReplaceParameters="false" TargetFileName="_DoNotModify.txt">_DoNotModify.txt</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="CopyRef.ps1">CopyRef.ps1</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="PackageModule.ps1">PackageModule.ps1</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

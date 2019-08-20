@@ -7,7 +7,7 @@ using Blish_HUD.Modules.Managers;
 using Blish_HUD.Settings;
 using Microsoft.Xna.Framework;
 
-namespace ModuleTemplate {
+namespace $username$.$safeprojectname$ {
 
     [Export(typeof(Blish_HUD.Modules.Module))]
     public class Module : Blish_HUD.Modules.Module {
