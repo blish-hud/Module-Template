@@ -7,15 +7,13 @@ using Blish_HUD.Modules.Managers;
 using Blish_HUD.Settings;
 using Microsoft.Xna.Framework;
 
-namespace $username$.$safeprojectname$ {
+namespace $safeprojectname$ {
 
     [Export(typeof(Blish_HUD.Modules.Module))]
     public class Module : Blish_HUD.Modules.Module {
 
-        private static readonly Logger Logger = Logger.GetLogger(typeof(Module));
-
-        internal static Module ModuleInstance;
-
+        private static readonly Logger Logger = Logger.GetLogger<Module>();
+        
         #region Service Managers
         internal SettingsManager    SettingsManager    => this.ModuleParameters.SettingsManager;
         internal ContentsManager    ContentsManager    => this.ModuleParameters.ContentsManager;
@@ -24,7 +22,7 @@ namespace $username$.$safeprojectname$ {
         #endregion
 
         [ImportingConstructor]
-        public Module([Import("ModuleParameters")] ModuleParameters moduleParameters) : base(moduleParameters) { ModuleInstance = this; }
+        public Module([Import("ModuleParameters")] ModuleParameters moduleParameters) : base(moduleParameters) { }
 
         protected override void DefineSettings(SettingCollection settings) {
             
@@ -50,10 +48,9 @@ namespace $username$.$safeprojectname$ {
 
         /// <inheritdoc />
         protected override void Unload() {
-            // Unload
+            // Unload here
 
             // All static members must be manually unset
-            ModuleInstance = null;
         }
 
     }
