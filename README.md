@@ -9,16 +9,20 @@ This package, once installed, adds a new project type to Visual Studio 2019 to h
 
 Instructions for creating a module without using this template can be found below.
 
-You can review our [example module](https://github.com/blish-hud/Example-Blish-HUD-Module/blob/master/README.md) (note: the example module is somewhat outdated - these instructions will be your best source when you get started making a module).
+You can review our [example module](https://github.com/blish-hud/Example-Blish-HUD-Module/blob/master/README.md) (note: the example module is somewhat outdated - the instructions below will be your best source when you are first getting started making a module).
 
 ## Module Workflow
 
-### Setup Using the Module Template for Visual Studio 2019
+Use either step A or step B below based on your preference.  Do not perform both sets of instructions.
 
-1. Install the template and create a new project in Visual Studio using the template.
+### A. Setup Using the Module Template for Visual Studio 2019
+
+1. Install the Visual Studio module template found under [Releases](https://github.com/blish-hud/Module-Template/releases).
+2. Create a new project in Visual Studio using the template.
+   - *Note: When doing this, you **must** select "Place solution and project in the same directory" while on the "Configure your new project" step of the project wizard.*
 2. Run `nuget restore` in the Package Manager Console to ensure all NuGet packages are restored.
 
-### Setup Without the Module Template
+### B. Setup Without the Module Template
 
 1. Create a new .NET Framework Class Library project.
 2. Add a reference to the latest version of Blish HUD to your project (`Install-Package BlishHUD`).
