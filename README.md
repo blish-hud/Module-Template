@@ -1,7 +1,8 @@
-﻿# Blish HUD Module Template for Visual Studio 2019
+# Blish HUD Module Template for Visual Studio 2019
 
 [![](https://img.shields.io/badge/Release-ModuleTemplateDeployment.vsix-Blue)](https://github.com/blish-hud/Module-Template/releases)
 [![Discord](https://img.shields.io/badge/Join_Our_Discord-📦module_discussion-Green)](https://discord.gg/HzAV82d)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fblish-hud%2FModule-Template.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fblish-hud%2FModule-Template?ref=badge_shield)
 
 ## Overview
 
@@ -49,3 +50,7 @@ By default, you should now be able to run your application - it'll generate the 
 As long as your project generates a PDB file, it will be packaged into your bhm and loaded by the module loader at runtime.
 
 If your project contains references to assemblies that Blish HUD will not already have loaded, these will need to be copied locally (which is the default behavior) or embedded into your module assembly using ILMerge or Costura.Fody.  Assemblies that are copied locally will be packaged into the bhm and, when referenced by your module, Blish HUD will automatically attempt to load their assembly.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fblish-hud%2FModule-Template.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fblish-hud%2FModule-Template?ref=badge_large)
